@@ -11,7 +11,7 @@ The idea for this was shamelessly copied from Nicolas Botzet and Steven Collins,
 Set Up
 ======
 
-- Install a JVM (>= 1.7), Gradle (>= 2.8), Node (>=6.2.1) and NPM
+- Install a JVM (>= 1.8), Gradle (>= 2.8), Node (>=6.2.1) and NPM
 - Run `./install` to build and install `server`, `java-udp-helper`, `swing-spectator` and `java-simple-bot`
 - Run `./start` to start server and spectator. Ctrl-C to stop both.
       - Use `./start 60000` to start server with initial delay of 1 minute (60000 msecs).
