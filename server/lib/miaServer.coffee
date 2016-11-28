@@ -44,7 +44,8 @@ class Server
 			@handleRegistration name, connection, true
 		else if messageCommand == 'UNREGISTER'
 			player = @playerFor connection
-			@handleUnregistration player, connection
+			if player?
+				@handleUnregistration player, connection
 		else
 			player = @playerFor connection
 			player?.handleMessage messageCommand, messageArgs

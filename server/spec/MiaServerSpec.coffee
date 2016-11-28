@@ -55,6 +55,9 @@ describe 'mia server', ->
 		expect(game.unregister).toHaveBeenCalled()
 		expect(player.unregistered).toHaveBeenCalled()
 
+	it 'should ignore bogus unregistration', ->
+		server.handleMessage 'UNREGISTER', ['mallory'], connection
+
 	it 'should reject registrations with invalid player names', ->
 		expectNameToBeRejected ''
 		expectNameToBeRejected 'nameWithSemicolon;'
